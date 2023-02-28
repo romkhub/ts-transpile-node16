@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "name": "ts-transpile-node16",
+  "version": "0.1.0-0",
+  "description": "An example repo to demonstrate a divergence btw TS compilation and transpilation when node16 module setting is used",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "transpile": "node ./bin/transpile.js",
+    "start": "npm run build && npm run transpile"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "typescript": "^4.9.4"
+  }
+}
